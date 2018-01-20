@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pure Slider CSS3 HTML5</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.wrapper--slider{
+				width: 100%;
+				position: relative;
+		}
+
+		div#slider {
+			width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		div#slider figure#slide figure {
+			position: relative;
+			width: 20%;
+			height: auto;
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+
+		div#slider figure#slide figure img{
+			width: 100%;
+			height: auto;
+		}
+
+		@keyframes slide { 
+			0%  { left: 0%; }
+			20% { left: 0%; }
+			25% { left: -100%; }
+			45% { left: -100%; }
+			50% { left: -200%; }
+			70% { left: -200%; } 
+			75% { left: -300%; }
+			95% { left: -300%; }
+			100% { left: -400%; } 
+		}
+
+		div#slider figure#slide {
+			position: relative;
+			width: 500%;
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			left: 0;
+			text-align: left;
+			animation: 30s slide infinite;  
+		}
+
+		figure#slide figure figcaption{
+			display: block;
+			position: absolute;
+			width: 100%;
+			background-color: rgba(0,0,0,0.3);
+			color: #fff;
+			bottom: 0px;
+			text-align: center;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			padding: .6rem;
+			transition: .5s;
+		}
+
+		#slide:hover figure figcaption {
+			opacity: 1;  bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<center><h1>PURE SLIDER CSS3 HTML5</h1></center>
+	<div class="wrapper--slider">
+		<div id="slider">
+			<figure id="slide">
+				<figure>
+					<img src="https://source.unsplash.com/zcyiFpt0E_E/1600x900" alt="Ejercicios de Alemán" data-caption="Slide 1">
+					<figcaption>Slide 1</figcaption>
+				</figure>
+				<figure>
+					<img src="https://source.unsplash.com/vcTuk3CBPIs/1600x900" alt="Clases de Alemán Online" data-caption="Slide 1">
+					<figcaption>Slide 1</figcaption>
+				</figure>
+				<figure>
+					<img src="https://source.unsplash.com/-l18_dgBD-U/1600x900" alt="Clases Grupales de Alemán" data-caption="Slide 1">
+					<figcaption>Slide 1</figcaption>
+				</figure>
+				<figure>
+					<img src="https://source.unsplash.com/wM1EMSkgu7U/1600x900" alt="Clases Particulares de Alemán" data-caption="Slide 1">
+					<figcaption>Slide 1</figcaption>
+				</figure>
+				<figure>
+					<img src="https://source.unsplash.com/zqR4Fpi6Lyo/1600x900" alt="Ejercicios de Alemán" data-caption="Slide 1">
+					<figcaption>Slide 1</figcaption>
+				</figure>
+			</figure>
+		</div>
+	</div>
+</body>
+</html>
